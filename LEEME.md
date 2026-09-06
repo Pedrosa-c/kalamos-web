@@ -41,8 +41,33 @@ sobre.html              Quiénes somos y contacto
 
 css/estilo.css          TODO el diseño está aquí
 img/                    imágenes que usa la web
+pdf/                    los números de la revista, para descargar
 marca/                  originales en alta (logo, paleta, portada del pódcast)
 ```
+
+---
+
+## Publicar un número nuevo de El Pedante
+
+Es lo que vais a hacer cada mes. Son cuatro pasos y no llega a diez minutos.
+
+**1. Preparad el PDF ligero.** El de maquetación pesa 13 MB y en un móvil con datos eso es mucho. Comprimidlo antes de subirlo: [ilovepdf.com/es/comprimir_pdf](https://www.ilovepdf.com/es/comprimir_pdf), opción *compresión recomendada*. El número 0 pasó de 13,5 MB a 2,2 MB sin que se note en pantalla.
+
+**2. Subid el PDF** a la carpeta `pdf/` del repositorio (*Add file → Upload files*). Nombradlo sin acentos, sin espacios y sin eñes:
+
+```
+El-Pedante-1-octubre-2026.pdf
+```
+
+**3. Subid la portada** a `img/`, en JPG y sin pasar de 800 píxeles de ancho:
+
+```
+el-pedante-1-portada.jpg
+```
+
+**4. Editad `el-pedante.html`.** Dentro del archivo hay un bloque de instrucciones con los pasos detallados. En resumen: cambiáis los datos del número destacado (mes, año, portada, sumario, enlaces) y pasáis el número anterior a la rejilla de abajo, donde hay una plantilla lista para copiar.
+
+Un consejo sobre el sumario: escribid los nombres completos de los grupos, los sitios y los festivales. Es lo que hace que alguien que busque «Soberao Jazz Dos Hermanas» en Google llegue a vuestra web. El PDF por sí solo es invisible para los buscadores.
 
 ---
 
@@ -124,13 +149,13 @@ La dirección `.pages.dev` sigue funcionando después, así que ningún enlace q
 
 ---
 
-## 6. Las otras dos piezas
+## 6. El pódcast, cuando salga
 
-La web es solo una de las tres. El plan completo:
+La revista vive aquí dentro, así que la web es el único sitio que hay que mantener. La pieza que falta es el pódcast:
 
-- **La web** (esto) en Cloudflare Pages. Cambia poco.
-- **El Pedante** en Blogger, para que podáis publicar cada número sin tocar código. La plantilla y el número 0 están en el otro paquete que os pasé.
-- **Cajón Desastre** en [Spotify for Creators](https://creators.spotify.com). Alojamiento gratis e ilimitado, y os da un RSS con el que el pódcast entra también en Apple Podcasts e iVoox. La portada cuadrada que pide está en `marca/cajon-desastre-portada-1400.png` (1400 × 1400, que es justo el mínimo que exigen).
+**Cajón Desastre** va en [Spotify for Creators](https://creators.spotify.com). Alojamiento gratis e ilimitado, y os da un RSS con el que el pódcast entra también en Apple Podcasts e iVoox. La portada cuadrada que os pide está en `marca/cajon-desastre-portada-1400.png` (1400 × 1400, justo el mínimo que exigen).
+
+Cuando publiquéis el primer episodio, en `cajon-desastre.html` hay un bloque comentado con el hueco preparado: se descomenta, se duplica por cada episodio y dentro se pega el `iframe` que Spotify da en *Compartir → Insertar*.
 
 ---
 

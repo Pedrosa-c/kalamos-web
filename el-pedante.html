@@ -4,11 +4,11 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>El Pedante · Kálamos</title>
-<meta name="description" content="El Pedante es la revista mensual de eventos culturales de Kálamos en Dos Hermanas: conciertos, talleres, festivales y teatro, con criterio propio.">
+<meta name="description" content="El Pedante es la revista mensual de eventos culturales de Kálamos en Dos Hermanas. Descarga gratis todos los números: conciertos, talleres, festivales y teatro.">
 <meta property="og:title" content="El Pedante · revista mensual de eventos culturales">
-<meta property="og:description" content="La agenda cultural de Dos Hermanas contada por Kálamos.">
-<meta property="og:type" content="article">
-<meta property="og:image" content="img/el-pedante-personaje.jpg">
+<meta property="og:description" content="La agenda cultural de Dos Hermanas, cada mes. Descarga gratuita.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="img/el-pedante-portada.jpg">
 <link rel="icon" href="img/favicon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -46,80 +46,130 @@
     <div class="env">
       <div class="pliego">
         <div class="texto">
-          <span class="cadencia">Revista · mensual</span>
+          <span class="cadencia">Revista · mensual · gratuita</span>
           <h1>El Pedante</h1>
-          <p class="entradilla">Revista mensual de eventos culturales en Dos Hermanas. Cada mes, la agenda de la ciudad contada con nombres propios y sin dar por hecho que aquí no pasa nada.</p>
-          <div class="acciones">
-            <!-- ⚠ CAMBIAR ESTA DIRECCIÓN por la del blog cuando esté creado ⚠ -->
-            <a class="boton" href="https://elpedantedh.blogspot.com">Leer el número en curso</a>
-          </div>
+          <p class="entradilla">La agenda cultural de Dos Hermanas, cada mes: conciertos, talleres, festivales y teatro. Con textos firmados, porque una agenda sin criterio es un tablón de anuncios.</p>
+          <a class="enlace" href="#numeros">Ir a los números</a>
         </div>
         <div class="lamina">
-          <img src="img/el-pedante-portada.jpg" alt="Portada del número 0 de El Pedante, septiembre de 2026">
+          <img src="img/el-pedante-personaje.jpg" alt="El personaje de El Pedante: una figura con traje granate sentada sobre una pila de libros, con una gramola por cabeza y un gato al lado">
         </div>
       </div>
     </div>
   </section>
 
-  <!-- ===== QUÉ ES ===== -->
-  <section class="campo campo--crema">
+
+  <!-- =======================================================================
+       ██  CÓMO PUBLICAR UN NÚMERO NUEVO CADA MES  ██
+
+       1. Sube el PDF a la carpeta  pdf/  del repositorio, con un nombre
+          del estilo:  El-Pedante-1-octubre-2026.pdf
+          (sin acentos, sin espacios y sin eñes en el nombre del archivo)
+
+       2. Sube la portada a la carpeta  img/  como imagen JPG, con un
+          nombre del estilo:  el-pedante-1-portada.jpg
+          Que no pase de 800 píxeles de ancho, para que cargue rápido.
+
+       3. Baja hasta la sección NÚMERO DESTACADO y cambia: el mes, el año,
+          la portada, el sumario y los dos enlaces al PDF.
+
+       4. El número que estaba destacado hasta ahora pásalo a la rejilla
+          de abajo: en la sección NÚMEROS ANTERIORES hay una plantilla
+          lista para copiar.
+
+       Y ya está. Guarda con Commit changes y en un minuto está publicado.
+       ======================================================================= -->
+
+
+  <!-- ===== NÚMERO DESTACADO ===== -->
+  <section class="campo campo--crema" id="numeros">
     <div class="env">
-      <div class="dos-columnas">
-        <div class="bloque">
-          <p class="rotulo rotulo--acento">Qué es</p>
-          <h2>Una agenda con opinión</h2>
-          <p class="destacado">El Teatro Municipal tiene 455 butacas y es, en gran medida, el escenario que define qué se entiende por cultura en Dos Hermanas. Nos parece que esa conversación merece más de una voz.</p>
-          <p>El Pedante recoge cada mes lo que se puede ver y hacer en la ciudad: conciertos, talleres, festivales, teatro, clubes de lectura. Pero no se limita a listarlo. Cada evento va acompañado de un texto firmado, porque una agenda sin criterio es un tablón de anuncios.</p>
-          <p>La revista se maqueta en PDF y se publica también en el blog, para que se pueda leer desde el móvil sin descargar nada.</p>
+      <p class="rotulo rotulo--acento">Último número</p>
+      <h2 style="font-size:var(--t-l);margin:14px 0 clamp(30px,5vw,44px)">N.º 0 · Septiembre de 2026</h2>
+
+      <div class="numero-destacado">
+
+        <a class="cubierta" href="pdf/El-Pedante-0-septiembre-2026.pdf">
+          <img src="img/el-pedante-portada.jpg" alt="Portada del número 0 de El Pedante, septiembre de 2026">
+        </a>
+
+        <div class="numero-datos">
+          <p style="font-size:var(--t-m)">El primero. Un mes con concierto, taller, festival de jazz y bastante más de lo que cabe en un cartel.</p>
+
+          <ul class="sumario">
+            <li>
+              <span class="cuando">5 sept</span>
+              <span class="que"><b>Celtas Cortos</b><span class="donde">Auditorio Municipal Los del Río · 22:00 h</span></span>
+            </li>
+            <li>
+              <span class="cuando">9 · 16 · 23 sept</span>
+              <span class="que"><b>Taller: Introducción a la Literatura</b><span class="donde">Biblioteca Municipal · organiza Kálamos</span></span>
+            </li>
+            <li>
+              <span class="cuando">25 · 26 · 27 sept</span>
+              <span class="que"><b>XX Festival Soberao Jazz</b><span class="donde">Ciudad del Conocimiento · ChoCo's Hot Seven, Guadaíra Big Band, Matheus Prado y EME·EME Proyect</span></span>
+            </li>
+            <li>
+              <span class="cuando">25 sept</span>
+              <span class="que"><b>Quinto Music Fest 2026</b><span class="donde">Avenida Madre Paula Montalt · La Pegatina, La Mare, Alba Dreid y DJ Raúl · entrada libre</span></span>
+            </li>
+            <li>
+              <span class="cuando">Desde el 22 sept</span>
+              <span class="que"><b>XX Festival Nacional de Teatro Aficionado Antonio Morillas Rodríguez</b><span class="donde">Teatro Municipal Juan Rodríguez Romero y Teatro Vistazul</span></span>
+            </li>
+            <li>
+              <span class="cuando">Todo el mes</span>
+              <span class="que"><b>Club de lectura y encuentros poéticos</b><span class="donde">Biblioteca Municipal · entrada libre</span></span>
+            </li>
+          </ul>
+
+          <div class="acciones">
+            <a class="boton" href="pdf/El-Pedante-0-septiembre-2026.pdf" download>Descargar el PDF</a>
+            <a class="boton boton--hueco" href="pdf/El-Pedante-0-septiembre-2026.pdf" target="_blank" rel="noopener">Leer en el navegador</a>
+          </div>
+          <p class="rotulo">PDF · 12 páginas · 2,2 MB · gratuito</p>
         </div>
-        <div class="bloque">
-          <blockquote class="cita">¿Qué le queda a la persona de veintidós años que se ve obligada a salir de su ciudad para buscar una mejor cartelera?</blockquote>
-          <p class="rotulo" style="margin-top:18px">El Pedante n.º 0 · septiembre de 2026</p>
-        </div>
+
       </div>
     </div>
   </section>
 
-  <!-- ===== NÚMERO EN CURSO ===== -->
+
+  <!-- ===== NÚMEROS ANTERIORES ===== -->
   <section class="campo campo--crema" style="padding-top:0">
     <div class="env">
-      <hr style="border:0;border-top:3px solid #1a1a1a;margin:0 0 clamp(32px,5vw,56px)">
-      <p class="rotulo rotulo--acento">Número 0 · Septiembre de 2026</p>
-      <h2 style="font-size:var(--t-l);margin:14px 0 32px">En este número</h2>
+      <hr style="border:0;border-top:3px solid #1a1a1a;margin:0 0 clamp(30px,5vw,48px)">
+      <p class="rotulo rotulo--acento">Números anteriores</p>
+      <h2 style="font-size:var(--t-l);margin:14px 0 26px">Todavía no hay</h2>
+      <p class="medida" style="color:var(--gris)">El número 0 es el primero. A partir de aquí, uno cada mes, y este es el sitio donde se irán guardando todos.</p>
 
-      <div class="fichas">
+      <!-- =================================================================
+           PLANTILLA PARA UN NÚMERO ANTERIOR
 
-        <article class="ficha">
-          <p class="rotulo">5 de septiembre</p>
-          <h3>Celtas Cortos</h3>
-          <p>Lo que le falta a la cartelera nazarena. Concierto en el Auditorio Municipal Los del Río, a las 22:00.</p>
-          <p class="pie-ficha rotulo">Texto: Ana Martín</p>
-        </article>
+           Cuando publiques el número 1, borra el <h2> y el <p> de arriba,
+           quita los símbolos de comentario de este bloque y rellénalo con
+           los datos del número 0. Después, para cada número que salga,
+           duplica el <article> entero.
+           ================================================================= -->
+      <!--
+      <div class="numeros" style="margin-top:34px">
 
-        <article class="ficha">
-          <p class="rotulo">9 · 16 · 23 de septiembre</p>
-          <h3>Introducción a la Literatura</h3>
-          <p>Nuestro taller en la Biblioteca Municipal: leer para hablar con quienes ya no están.</p>
-          <p class="pie-ficha rotulo">Texto: Diego Sánchez</p>
-        </article>
-
-        <article class="ficha">
-          <p class="rotulo">25 · 26 · 27 de septiembre</p>
-          <h3>XX Festival Soberao Jazz</h3>
-          <p>El secreto mejor guardado de la calle Francesa, en la Ciudad del Conocimiento.</p>
-          <p class="pie-ficha rotulo">Texto: Sebastián Dávila</p>
-        </article>
-
-        <article class="ficha">
-          <p class="rotulo">Todo el mes</p>
-          <h3>Tampoco te puedes perder…</h3>
-          <p>Quinto Music Fest, el Festival de Teatro Aficionado, el club de lectura y los encuentros poéticos.</p>
-          <p class="pie-ficha rotulo">Recomendados por la casa</p>
+        <article class="numero">
+          <a class="cubierta" href="pdf/El-Pedante-0-septiembre-2026.pdf">
+            <img src="img/el-pedante-portada.jpg" alt="Portada del número 0 de El Pedante" loading="lazy">
+          </a>
+          <div>
+            <h3>N.º 0</h3>
+            <p>Septiembre de 2026</p>
+          </div>
+          <a class="enlace" href="pdf/El-Pedante-0-septiembre-2026.pdf" download>Descargar</a>
         </article>
 
       </div>
+      -->
     </div>
   </section>
+
 
   <!-- ===== COLABORAR ===== -->
   <section class="campo campo--granate">
