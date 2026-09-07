@@ -1,0 +1,7 @@
+# Kálamos · proyectokalamos.es
+# Adelante, indexadlo todo.
+
+User-agent: *
+Allow: /
+
+Sitemap: https://proyectokalamos.es/sitemap.xml
