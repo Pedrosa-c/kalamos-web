@@ -191,6 +191,10 @@ code{
   --fondo:var(--granate); --texto-color:var(--crema); --texto-2:var(--gris-claro);
   --acento:var(--ocre); --acento-fino:var(--ocre); --borde:var(--crema);
 }
+.campo--ocre{
+  --fondo:var(--ocre); --texto-color:var(--tinta); --texto-2:#4a3a12;
+  --acento:var(--granate); --acento-fino:var(--granate); --borde:var(--tinta);
+}
 
 /* --- 5. Cabecera y navegación ------------------------------------------- */
 
@@ -349,6 +353,27 @@ code{
 .numero .cubierta{ width:100% }
 .numero h3{ font-size:1.15rem }
 .numero p{ font-size:var(--t-s); color:var(--texto-2) }
+
+/* ---- bloque de Instagram (aparece en varias páginas) ---- */
+.social{
+  display:grid;
+  grid-template-columns:auto minmax(0,1fr) auto;
+  gap:clamp(20px,4vw,42px);
+  align-items:center;
+}
+.social .glifo{ width:clamp(52px,7vw,78px); height:auto; flex:none; color:var(--texto-color) }
+.social .arroba{
+  font-family:var(--display);
+  font-size:clamp(1.6rem,4.2vw,2.6rem);
+  font-weight:600; letter-spacing:-.02em; line-height:1;
+  margin:10px 0 12px; word-break:break-word;
+}
+.social .dice{ color:var(--texto-2); max-width:52ch; font-size:var(--t-s) }
+.social .acciones{ display:flex; gap:12px; flex-wrap:wrap }
+@media (max-width:820px){
+  .social{ grid-template-columns:1fr; gap:22px; text-align:left }
+  .social .glifo{ width:56px }
+}
 
 /* equipo */
 .equipo{ display:grid; grid-template-columns:repeat(auto-fit,minmax(200px,1fr)); gap:clamp(22px,3vw,40px) }
